@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 💑 The Love Calculator</title>
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        body {
+            background-image: url("images/images\ \(5\).jpg");
+            /* background-repeat: no-repeat; */
+            /* background-size: cover; */
+        }
+    </style>
+
+</head>
+<body>
+    <div class="row mt-5">
+        <div class="col-md-4"></div>
+
+        <div class="col-md-4">
+            <div class="card bg-secondary">
+                <div class="card-header">Real Love Test</div>
+
+                <div class="card-body">
+                         
+                    <img src="images/images (4).jpg" alt="Love Pic">
+
+                    <br>
+
+                        <div class="input-group form-group">
+                        <label class="col-md-5" for="fname">Your Name :</label>
+                        <input class="form-control col-md-7" type="text" id="uname" placeholder="Enter Your Name Here" required>
+                        </div>
+
+                        <div class="input-group form-group">
+                            <label class="col-md-5" for="lname">Partner Name :</label>
+                            <input class="form-control col-md-7" type="text" id="pname" placeholder="Enter Partner Name Here" required><br><br>
+                        </div>
+
+                        <div class="text-center">
+                            <button class="btn btn-dark mt-3" onclick="loveCalculator();"> ♥ Calculate Now</button>
+                        </div>
+
+                       
+                      
+                
+                </div>
+                
+                
+            </div>
+        </div>
+
+        <div class="col-md-4"></div>
+    </div>
+    
+    
+<!-- <script src="index.js"></script> -->
+
+<script>
+    function loveCalculator(){
+        var randomNumber = Math.floor(Math.random() * 100) + 1;
+
+        if(uname.value !="" && pname.value != ""){
+            if(randomNumber >= 70){
+            alert("You have " + randomNumber + "% matching and you guys are made for each other.");
+        }else if(randomNumber > 50 && randomNumber < 70){
+            alert("You have " + randomNumber + "% matching and you guys are OK.");
+        }else{
+        alert("You have " + randomNumber + "% matching and you guys are like water and oil.");
+        }
+
+        }else{
+            alert("Please enter both fileds");
+        }
+
+       
+    }
+</script>
+
+
+</body>
+</html>

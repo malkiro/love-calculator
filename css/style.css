@@ -1,0 +1,21 @@
+.card-header{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    color: white;
+}
+
+label{
+    color: white;
+    font-weight: bold;
+
+}
+
+img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: auto;  
+}
+
